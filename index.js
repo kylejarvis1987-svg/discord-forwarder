@@ -27,7 +27,6 @@ console.log('Logged in as ' + client.user.tag);
 });
 
 client.on('messageCreate', function(message) {
-if (message.author.bot) return;
 if (sourceChannels.indexOf(message.channelId) === -1) return;
 
 var payload = JSON.stringify({
